@@ -1,5 +1,5 @@
 // Import the functions you need from the SDKs you need
-/*import { firebase } from "@react-native-firebase/auth";
+import { firebase } from "@react-native-firebase/auth";
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -21,4 +21,4 @@ let app
 app = initializeApp(firebaseConfig);
 const auth = getFirestore(app)
 
-export {auth};*/
+export {auth};

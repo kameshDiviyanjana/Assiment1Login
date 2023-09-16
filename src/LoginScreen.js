@@ -1,7 +1,7 @@
 // LoginScreen.js
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet,SafeAreaView} from 'react-native';
-//import {auth} from '../firebase';
+import {auth} from '../firebase';
 import { useNavigation } from '@react-navigation/core';
 import { doc, getDoc } from "firebase/firestore";
 
@@ -12,14 +12,14 @@ const LoginScreen = () => {
   const navigation  = useNavigation()
 
   const handleLogin = async () => {
-  /*  try {
+    try {
     
       const docRef = doc(auth, "cities", email);
       const docSnap = await getDoc(docRef);
       
       if (docSnap.exists()) {
       
-        navigation.navigate('Home' as never)
+        navigation.navigate('Home')
       } else {
         // docSnap.data() will be undefined in this case
         console.log("No such document!");
@@ -29,7 +29,7 @@ const LoginScreen = () => {
     } catch (error) {
       console.error('Login error:', error);
       
-    }*/
+    }
   };
 
  
@@ -56,7 +56,7 @@ const LoginScreen = () => {
        
     </View> 
     <View>
-    <Text onPress={() => navigation.navigate('Home' as never)}>i have no Accounnt</Text>
+    <Text onPress={() => navigation.navigate('Home')}>i have no Accounnt</Text>
     </View>
     </SafeAreaView>
    

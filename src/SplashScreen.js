@@ -4,13 +4,13 @@ import { useNavigation } from '@react-navigation/native';
 
 
 
-function SplashScreen(_options: any) {
+function SplashScreen() {
   const navigation = useNavigation();
     // Simulate a delay for demonstration purposes
   useEffect(() => {
-    setTimeout((options: any) => {
+    setTimeout(() => {
 
-      navigation.navigate('Home' as never)
+      navigation.navigate('Home')
             
     
     }, 2000); // Adjust the duration as needed (2 seconds in this example)
